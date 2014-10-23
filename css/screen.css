@@ -35,15 +35,15 @@ input::-moz-placeholder, textarea::-moz-placeholder { font-size: 16px; text-tran
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 16px; text-transform: uppercase; color: #5a5a5a; font-family: "Conv_PFDinTextCondPro-Light"; font-weight: normal; font-style: normal; }
 input::placeholder, textarea::placeholder { font-size: 16px; text-transform: uppercase; color: #5a5a5a; font-family: "Conv_PFDinTextCondPro-Light"; font-weight: normal; font-style: normal; }
 
-.top .top_in, .scrollMenu .top_in, header .header_in, .bottom .header_in, .specs .specs_in, .photos .photos_in, .our .our_in, .reviews .reviews_in, .order .order_in, footer { max-width: 1200px; width: 1000px; margin-left: auto; margin-right: auto; }
+.top .top_in, .scrollMenu .top_in, header .header_in, .bottom .header_in, .specs .specs_in, .photos .photos_in, .reviews .reviews_in, .order .order_in, .our .our_in, footer { max-width: 1200px; width: 1000px; margin-left: auto; margin-right: auto; }
 
 .myFancyClose { position: absolute; top: -17px; right: -18px; }
 
 .btn { display: inline-block; -moz-border-radius: 16px; -webkit-border-radius: 16px; border-radius: 16px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; padding: 8px 25px; color: #504b41; font-size: 18px; border: solid 2px #ffffff; text-decoration: underline; -moz-transition: background, 0.5s; -o-transition: background, 0.5s; -webkit-transition: background, 0.5s; transition: background, 0.5s; }
 .btn:hover { color: #504b41; background-color: white; }
 
-.title { font-size: 36px; font-family: "gotham_prolight"; line-height: 1em; color: #000; text-transform: uppercase; font-weight: normal; position: relative; text-align: left; }
-.title span { font-size: 48px; font-family: "gotham_probold"; }
+.title { font-size: 48px; font-family: "conv_pfdintextcondpro-thin"; line-height: 1em; color: #000; text-transform: uppercase; font-weight: normal; position: relative; text-align: center; }
+.title span { font-size: 48px; }
 
 .counter { width: 285px; text-align: center; display: block; margin: -5px auto 25px; }
 .counter p { color: #ffffff; margin-bottom: 5px; margin-top: 3px; font-size: 14px; position: static; font-family: "conv_pfdintextcondpro-light"; }
@@ -62,17 +62,11 @@ input::placeholder, textarea::placeholder { font-size: 16px; text-transform: upp
 form { margin-top: 17px; position: relative; }
 form input { padding-left: 20px; float: left; width: 200px; height: 50px; display: inline-block; margin: auto 20px 10px auto; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 18px; color: #ffffff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background: rgba(255, 255, 255, 0.1); }
 
-.form__bottom { text-align: center; font-family: "conv_pfdintextcondpro-light"; font-size: 16px; color: #3c3c3c; margin-top: 8px; line-height: 1.2em; }
-.form__bottom span { font-family: "conv_pfdintextcondpro-regular"; font-size: 24px; }
-
 .button { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: url(../img/header-button_bg.png) no-repeat; width: 260px; height: 90px; color: #d2b978; text-shadow: 0px 0px 1px #aaa; display: block; margin: 20px auto auto; font-family: "code_pro_lcregular"; font-size: 24px; text-transform: uppercase; text-decoration: none; letter-spacing: 1px; }
 .button:hover { -moz-box-shadow: inset 0 0 5px 2px #d2b978; -webkit-box-shadow: inset 0 0 5px 2px #d2b978; box-shadow: inset 0 0 5px 2px #d2b978; }
 
 .button--red { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; -moz-box-shadow: inset 0 -4px 0 rgba(110, 17, 17, 0.9); -webkit-box-shadow: inset 0 -4px 0 rgba(110, 17, 17, 0.9); box-shadow: inset 0 -4px 0 rgba(110, 17, 17, 0.9); background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U1MzEzMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzhiMDkwOSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e53131), color-stop(100%, #8b0909)); background-image: -moz-linear-gradient(top, #e53131 0%, #8b0909 100%); background-image: -webkit-linear-gradient(top, #e53131 0%, #8b0909 100%); background-image: linear-gradient(to bottom, #e53131 0%, #8b0909 100%); color: #ffffff; font-family: "pf_highway_sans_probold"; font-size: 30px; font-weight: normal; display: inline-block; margin: 20px auto auto; text-decoration: none; padding: 17px 62px; }
 .button--red:hover { background: #bb0c0c; -moz-box-shadow: 0 0 0 0; -webkit-box-shadow: 0 0 0 0; box-shadow: 0 0 0 0; }
-
-.button--order { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 17px 38px; color: #ffffff; text-align: center; margin-top: 0; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background-color: #d1b977; font-family: "code_pro_lcregular"; font-size: 14px; }
-.button--order:hover { background: #decd9d; }
 
 .button--specs { display: inline-block; text-align: center; font-family: "pf_highway_sans_probold"; color: #000000; border: solid 2px #000000; background: transparent; width: 200px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; height: 70px; font-size: 30px; margin-top: 0; }
 .button--specs:hover { -moz-box-shadow: inset 0 0 5px 2px #000; -webkit-box-shadow: inset 0 0 5px 2px #000; box-shadow: inset 0 0 5px 2px #000; }
@@ -219,13 +213,45 @@ header .header_in .header__right h2, .bottom .header_in .header__right h2 { font
 .slick-next:hover { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='); background-size: 100%; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #ffffff)); background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff); background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff); background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff); }
 .slick-next:before { position: absolute; content: ""; top: 38%; right: 5px; left: auto; background: url('../img/icons-sb6a6e845f4.png') 0 -195px no-repeat; width: 40px; height: 90px; }
 
+.reviews { *zoom: 1; padding-bottom: 60px; }
+.reviews:after { content: " "; display: table; clear: both; }
+.reviews h2 { margin-bottom: 35px; text-align: center; }
+.reviews .reviews_in { *zoom: 1; }
+.reviews .reviews_in:after { content: " "; display: table; clear: both; }
+.reviews .review__item { -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; width: 300px; position: relative; display: inline-block; margin-right: 42px; vertical-align: top; text-align: center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
+.reviews .review__item:after { content: " "; display: table; clear: both; }
+.reviews .review__item:last-child { margin-right: 0; }
+.reviews .review__item .review__img { display: inline-block; width: 120px; height: 120px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; border: solid 2px #e5e5e5; margin-bottom: 15px; }
+.reviews .review__item .review__img img { vertical-align: middle; display: inline-block; }
+.reviews .review__item .review__img .vertical-centered { vertical-align: middle; display: inline-block; height: 100%; }
+.reviews .review__item h3 { color: #1e1e1e; font-size: 24px; font-family: "conv_pfdintextcondpro-light"; text-transform: uppercase; margin-bottom: 10px; font-weight: normal; }
+.reviews .review__item p { font-family: "Conv_PFDinTextCondPro-Light"; font-weight: normal; font-style: normal; color: #1e1e1e; font-size: 16px; padding: 0 10px; }
+
+.order { margin-top: 0; padding-bottom: 40px; }
+.order .order_in { width: 1010px; }
+.order h2 { margin-bottom: 35px; text-align: center; }
+.order__item { vertical-align: top; width: 320px; height: 600px; text-align: center; padding-top: 20px; display: inline-block; margin-right: 18px; border: solid 4px #e6e6e6; background: #ffffff; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.order__item:last-child { margin-right: 0; }
+.order__caption { font-size: 30px; font-family: "conv_pfdintextcondpro-thin"; margin-bottom: 15px; color: #1e1e1e; text-transform: none; }
+.order__img { display: inline-block; margin-bottom: 5px; width: 130px; height: 220px; }
+.order__img img { display: block; }
+.order__price { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; line-height: 2em; background: url(../img/specs-price_bg.png) no-repeat; width: 330px; height: 90px; margin-left: -14px; padding-top: 34px; }
+.order__price h3 { font-family: "conv_pfdintextcondpro-thin"; font-size: 36px; font-weight: normal; color: #ffffff; float: left; margin-left: 85px; vertical-align: middle; }
+.order__price h3 span { font-family: "als_rublregular"; font-size: 14px; }
+.order__price h4 { display: inline-block; float: right; margin-right: 50px; font-size: 24px; color: #5a5a5a; }
+.order__text { padding: 20px 15px 0; font-size: 16px; color: #787878; text-align: left; margin-bottom: 5px; }
+.order__more { color: #aa2828; font-size: 18px; }
+.order__more:hover { text-decoration: none; }
+.order__form { margin-top: -10px; }
+.order__form button { font-size: 24px; }
+
 .our { background: url(../img/our_bg.jpg) center no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; height: 800px; padding-top: 65px; position: relative; *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .our:after { content: " "; display: table; clear: both; }
-.our h3 { font-weight: normal; color: #ffffff; font-size: 36px; font-family: "georgiaitalic"; text-align: center; line-height: 1em; text-transform: uppercase; }
-.our h2 { color: white; }
+.our h3 { font-weight: normal; color: #ffffff; font-size: 36px; font-family: "conv_pfdintextcondpro-thin"; text-align: center; line-height: 1em; text-transform: uppercase; }
+.our h2 { color: white; font-family: "code_pro_lightregular"; font-size: 60px; text-align: center; font-weight: normal; line-height: 1.2em; }
 .our .our_in { position: relative; *zoom: 1; }
 .our .our_in:after { content: " "; display: table; clear: both; }
-.our .russia { position: relative; background: url(../img/russia.png) center center no-repeat; width: 860px; height: 515px; margin: -60px auto 0; }
+.our .russia { position: relative; background: url(../img/russia.png) center center no-repeat; width: 860px; height: 515px; margin: -100px auto 0; }
 .our__delivery { width: 170px; color: #ffffff; font-family: "conv_pfdintextcondpro-regular"; font-size: 18px; position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); margin-top: 60px; margin-left: 35px; }
 .our__delivery:before { position: absolute; content: ""; background: url('../img/icons-sb6a6e845f4.png') 0 -295px no-repeat; width: 120px; height: 160px; top: -73px; left: -132px; }
 .our__bottom { width: 600px; margin: 55px auto 0; position: relative; margin-left: 345px; }
@@ -233,37 +259,8 @@ header .header_in .header__right h2, .bottom .header_in .header__right h2 { font
 .our__price:before { position: absolute; top: -8px; left: -75px; content: ""; background: url('../img/icons-sb6a6e845f4.png') 0 -565px no-repeat; width: 60px; height: 60px; }
 .our__support { width: 190px; display: inline-block; position: relative; font-size: 18px; color: #ffffff; font-family: "conv_pfdintextcondpro-regular"; }
 .our__support:before { position: absolute; top: -5px; left: -75px; content: ""; background: url('../img/icons-sb6a6e845f4.png') 0 -131px no-repeat; width: 60px; height: 54px; }
-.our__girl { position: absolute; bottom: -97px; left: -50px; }
+.our__girl { position: absolute; bottom: -107px; left: -210px; }
 .our__girl img { display: block; }
-
-.reviews { *zoom: 1; margin-top: 65px; padding-bottom: 60px; }
-.reviews:after { content: " "; display: table; clear: both; }
-.reviews h2 { margin-bottom: 35px; text-align: center; }
-.reviews .reviews_in { *zoom: 1; }
-.reviews .reviews_in:after { content: " "; display: table; clear: both; }
-.reviews .review__item { -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; width: 300px; position: relative; display: inline-block; margin-right: 42px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; padding: 18px; background: #efefef; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
-.reviews .review__item:after { content: " "; display: table; clear: both; }
-.reviews .review__item:last-child { margin-right: 0; }
-.reviews .review__item:after { position: absolute; content: ""; bottom: -34px; left: 15px; background: url('../img/icons-sb6a6e845f4.png') 0 -635px no-repeat; width: 54px; height: 42px; }
-.reviews .review__item h3 { color: #000; font-size: 18px; font-family: "gotham_proregular"; text-transform: uppercase; margin-bottom: 10px; font-weight: normal; }
-.reviews .review__item p { font-family: "Conv_PFDinTextCondPro-Light"; font-weight: normal; font-style: normal; color: #3c3c3c; font-size: 16px; }
-
-.order { margin-top: 65px; padding-bottom: 40px; }
-.order .order_in { width: 945px; }
-.order h2 { margin-bottom: 40px; text-align: center; }
-.order__item { background: url("../img/order-item_bg--second.jpg") no-repeat; vertical-align: top; width: 300px; height: 500px; text-align: center; padding-top: 25px; display: inline-block; margin-right: 18px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.order__item.item--first { background: url(../img/order-item_bg--first.jpg) no-repeat; }
-.order__item.item--third { background: url(../img/order-item_bg--third.jpg) no-repeat; }
-.order__item:last-child { margin-right: 0; }
-.order__caption { font-size: 24px; font-family: "gotham_proregular"; margin-bottom: -5px; color: #000; text-transform: uppercase; }
-.order__img { display: inline-block; margin-bottom: 15px; width: 190px; height: 310px; }
-.order__img img { display: block; }
-.order__price { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; line-height: 2em; }
-.order__price h3 { font-family: "code_pro_lcregular"; font-size: 24px; font-weight: normal; color: #be0a0a; }
-.order__price h3 span { font-family: "als_rublregular"; }
-.order__text { padding: 20px 15px 0; font-size: 16px; color: #787878; text-align: left; }
-.order__form { margin-top: 0px; }
-.order__form input { width: 250px; margin-bottom: 10px; border: 2px solid #dbdbdb; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
 
 .bottom { height: 710px; padding-top: 55px; background: url(../img/bottom_bg.jpg) no-repeat center center; }
 .bottom .header_in--bottom { margin-top: 0px !important; }

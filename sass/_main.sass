@@ -396,6 +396,134 @@ header
     left: auto
     +s(next)
 
+.reviews
+  +clr
+  padding-bottom: 60px
+  h2
+    margin-bottom: 35px
+    text-align: center
+  .reviews_in
+    @extend %in
+    +clr
+  .review__item
+    +background-clip(padding-box)
+    width: 300px
+    position: relative
+    display: inline-block
+    margin-right: 42px
+    vertical-align: top
+    text-align: center
+    +box
+    +clr
+    &:last-child
+      margin-right: 0
+    .review__img
+      display: inline-block
+      width: 120px
+      height: 120px
+      +border-radius(50%)
+      border: solid 2px #e5e5e5
+      margin-bottom: 15px
+      img
+        vertical-align: middle
+        display: inline-block
+      .vertical-centered
+        vertical-align: middle
+        display: inline-block
+        height: 100%
+
+
+
+    h3
+      color: #1e1e1e
+      font-size: 24px
+      font-family: 'conv_pfdintextcondpro-light'
+      text-transform: uppercase
+      margin-bottom: 10px
+      font-weight: normal
+    p
+      +pfl
+      color: #1e1e1e
+      font-size: 16px
+      padding: 0 10px
+
+.order
+  margin-top: 0
+  padding-bottom: 40px
+  .order_in
+    @extend %in
+    width: 1010px
+  h2
+    margin-bottom: 35px
+    text-align: center
+  &__item
+    vertical-align: top
+    width: 320px
+    height: 600px
+    text-align: center
+    padding-top: 20px
+    display: inline-block
+    margin-right: 18px
+    border: solid 4px rgb(230,230,230)
+    background: #ffffff
+    +box
+    &:last-child
+      margin-right: 0
+  &__caption
+    font-size: 30px
+    font-family: 'conv_pfdintextcondpro-thin'
+    margin-bottom: 15px
+    color: #1e1e1e
+    text-transform: none
+  &__img
+    display: inline-block
+    margin-bottom: 5px
+    width: 130px
+    height: 220px
+    img
+      display: block
+  &__price
+    +box
+    line-height: 2em
+    background: url(../img/specs-price_bg.png) no-repeat
+    width: 330px
+    height: 90px
+    margin-left: -14px
+    padding-top: 34px
+    h3
+      font-family: 'conv_pfdintextcondpro-thin'
+      font-size: 36px
+      font-weight: normal
+      color: #ffffff
+      float: left
+      margin-left: 85px
+      vertical-align: middle
+      span
+        font-family: 'als_rublregular'
+        font-size: 14px
+    h4
+      display: inline-block
+      float: right
+      margin-right: 50px
+      font-size: 24px
+      color: #5a5a5a
+  &__text
+    padding: 20px 15px 0
+    font-size: 16px
+    color: #787878
+    text-align: left
+    margin-bottom: 5px
+  &__more
+    color: #aa2828
+    font-size: 18px
+    &:hover
+      text-decoration: none
+
+  &__form
+    margin-top: -10px
+    input
+    button
+      font-size: 24px
 
 
 .our
@@ -410,12 +538,17 @@ header
     font-weight: normal
     color: #ffffff
     font-size: 36px
-    font-family: 'georgiaitalic'
+    font-family: 'conv_pfdintextcondpro-thin'
     text-align: center
     line-height: 1em
     text-transform: uppercase
   h2
     color: white
+    font-family: 'code_pro_lightregular'
+    font-size: 60px
+    text-align: center
+    font-weight: normal
+    line-height: 1.2em
 
   .our_in
     @extend %in
@@ -427,7 +560,7 @@ header
     background: url(../img/russia.png) center center no-repeat
     width: 860px
     height: 515px
-    margin: -60px auto 0
+    margin: -100px auto 0
   &__delivery
     width: 170px
     color: #ffffff
@@ -480,122 +613,14 @@ header
       +s(bubble_ico)
   &__girl
     position: absolute
-    bottom: -97px
-    left: -50px
+    bottom: -107px
+    left: -210px
     img
       display: block
 
 
-.reviews
-  +clr
-  margin-top: 65px
-  padding-bottom: 60px
-  h2
-    margin-bottom: 35px
-    text-align: center
-  .reviews_in
-    @extend %in
-    +clr
-  .review__item
-    +background-clip(padding-box)
-    width: 300px
-    position: relative
-    display: inline-block
-    margin-right: 42px
-    +border-radius(8px)
-    +background-clip(padding-box)
-    padding: 18px
-    background: #efefef
-    +box
-    +clr
-    &:last-child
-      margin-right: 0
-    &:after
-      position: absolute
-      content: ""
-      bottom: -34px
-      left: 15px
-      +s(review_popup)
-
-    h3
-      color: #000
-      font-size: 18px
-      font-family: 'gotham_proregular'
-      text-transform: uppercase
-      margin-bottom: 10px
-      font-weight: normal
-    p
-      +pfl
-      color: #3c3c3c
-      font-size: 16px
 
 
-
-
-.order
-  margin-top: 65px
-  padding-bottom: 40px
-  .order_in
-    @extend %in
-    width: 945px
-  h2
-    margin-bottom: 40px
-    text-align: center
-  &__item
-    background: url("../img/order-item_bg--second.jpg") no-repeat
-    vertical-align: top
-    width: 300px
-    height: 500px
-    text-align: center
-    padding-top: 25px
-    display: inline-block
-    margin-right: 18px
-    &.item--first
-      background: url(../img/order-item_bg--first.jpg) no-repeat
-    &.item--third
-      background: url(../img/order-item_bg--third.jpg) no-repeat
-    +box
-    &:last-child
-      margin-right: 0
-  &__caption
-    font-size: 24px
-    font-family: 'gotham_proregular'
-    margin-bottom: -5px
-    color: #000
-    text-transform: uppercase
-  &__img
-    display: inline-block
-    margin-bottom: 15px
-    width: 190px
-    height: 310px
-    img
-      display: block
-  &__price
-    +box
-    line-height: 2em
-
-
-    h3
-      font-family: 'code_pro_lcregular'
-      font-size: 24px
-      font-weight: normal
-      color: #be0a0a
-      span
-        font-family: 'als_rublregular'
-
-  &__text
-    padding: 20px 15px 0
-    font-size: 16px
-    color: #787878
-    text-align: left
-  &__form
-    margin-top: 0px
-    input
-      width: 250px
-      margin-bottom: 10px
-      border: 2px solid #dbdbdb
-      +border-radius(4px)
-    .button
 
 
 
