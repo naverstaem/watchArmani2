@@ -68,14 +68,12 @@
     &:hover
       text-decoration: none
 
-
 header
   background: url(../img/header_bg.jpg) center center no-repeat
   +background-size(cover)
   height: 900px
   position: relative
   +box
-
 
   h1
     font-size: 72px
@@ -84,7 +82,6 @@ header
     line-height: 1.2em
     text-transform: uppercase
     font-weight: normal
-
 
   .header_in
     @extend %in
@@ -101,8 +98,6 @@ header
       float: left
       margin-left: -10px
       +clr
-
-
 
     .price
       background: url(../img/price_bg.png) no-repeat
@@ -131,10 +126,6 @@ header
           font-family: 'als_rublregular'
           font-size: 24px
 
-
-
-
-
     .header__right
       position: relative
       float: right
@@ -159,9 +150,6 @@ header
         color: #ffffff
         text-transform: uppercase
 
-
-
-
 .scrollMenu
   //@extend header
   @extend .top
@@ -176,13 +164,9 @@ header
   display: none
   height: 60px
   +box
-  background: rgba(#000, 0.8)
+  background: rgba(#6e645a, 0.8)
   .top
     height: 0
-
-
-
-
 
 .specs
   padding-top: 45px
@@ -244,7 +228,6 @@ header
       color: #000000
       font-family: 'conv_segoeprintregular'
 
-
   &__item
     color: #787878
     margin-top: 16px
@@ -256,10 +239,6 @@ header
       font-family: 'gotham_proregular'
       color: #8c0a0a
       font-size: 18px
-
-
-
-
 
     span
       color: #000
@@ -306,8 +285,6 @@ header
       color: #5a5a5a
       content: ""
       font-family: 'conv_pfdintextcondpro-thin'
-
-
 
 .photos
   padding: 35px 0 60px 0
@@ -360,7 +337,7 @@ header
         width: 300px
         height: 160px
         background: none
-        border: solid rgba(#ebd7a5,.4) 4px
+        border: solid rgba(#ebd7a5, .4) 4px
         content: ""
       &:hover
         +opacity(1)
@@ -376,18 +353,19 @@ header
   height: 200px
   +transition(background, .5s)
   &:hover
-    +background-image(linear-gradient(to right, rgba(#fff,1), rgba(#fff,0)))
+    +background-image(linear-gradient(to right, rgba(#fff, 1), rgba(#fff, 0)))
   &:before
     position: absolute
     content: ""
     top: 38%
     left: 0
     +s(prev)
+
 .slick-next
   right: 0
   left: auto
   &:hover
-    +background-image(linear-gradient(to right, rgba(#fff,0), rgba(#fff, 1)))
+    +background-image(linear-gradient(to right, rgba(#fff, 0), rgba(#fff, 1)))
   &:before
     position: absolute
     content: ""
@@ -432,8 +410,6 @@ header
         display: inline-block
         height: 100%
 
-
-
     h3
       color: #1e1e1e
       font-size: 24px
@@ -464,7 +440,7 @@ header
     padding-top: 20px
     display: inline-block
     margin-right: 18px
-    border: solid 4px rgb(230,230,230)
+    border: solid 4px rgb(230, 230, 230)
     background: #ffffff
     +box
     &:last-child
@@ -524,7 +500,6 @@ header
     input
     button
       font-size: 24px
-
 
 .our
   background: url(../img/our_bg.jpg) center no-repeat
@@ -618,20 +593,12 @@ header
     img
       display: block
 
-
-
-
-
-
-
 .bottom
-  height: 710px
+  height: 790px
   @extend header
   padding-top: 55px
-  background: url(../img/bottom_bg.jpg) no-repeat center center
   .header_in--bottom
     margin-top: 0px !important
-
 
 footer
   box-sizing: border-box
@@ -643,7 +610,7 @@ footer
     font-size: 16px
     color: #787878
     a
-      color: #be0a0a
+      color: #be1e1e
       &:hover
         text-decoration: none
 
