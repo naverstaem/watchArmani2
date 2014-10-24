@@ -244,6 +244,19 @@ header
       color: #000
       font-size: 18px
       text-transform: uppercase
+    .item-colors
+      display: inline-block
+      vertical-align: top
+      .golden
+        display: inline-block
+        width: 20px
+        height: 20px
+        +border-radius(2px)
+        background: #ebd7a5
+        margin-left: 10px
+      .dark
+        @extend .golden
+        background: #000000
 
   &__watch
     margin-top: -10px
